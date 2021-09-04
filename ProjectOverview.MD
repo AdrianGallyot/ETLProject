@@ -20,16 +20,15 @@ Transform:
 
 City_temperature will be cleaned up to remove blank columns, creation of date column based on the Day, month and Year value provided, and removal of year value that are outliers (200, 201)
 
-Environment_temperature.csv will be filtered to extract temperate change and standard deviation into two seperate tables.  Will also remove all the following quarterly and year grouped data (Dec–Jan–Feb,Dec–Jan–Feb,Mar–Apr–May
-Mar–Apr–May
-Jun–Jul–Aug
-Jun–Jul–Aug
-Sep–Oct–Nov
-Sep–Oct–Nov
-Meteorological year
-Meteorological year)
+Environment_temperature.csv will be filtered to extract temperate change and standard deviation into two seperate tables.
 
-A distinct city, Country table will be formed from the City_temperate dataset will be created.
+Creation of Element, Month and EnvArea tables based on the relationships.
+
+
+Use the City_temperature.csv to create three new tables with unique values for Cities, Countries and Regions.
+
+
+Using this distinct city table list, I will then use this a source for the OpenWeather API to get the Latitude and current temperature values for the CurrentCityWeather table
 
 Using the above City dataset will then be used in a Python Notebook file to query the OpenWeather API to get the current temperature for all cities and store in a new table
 
@@ -39,8 +38,13 @@ TemperatureDataDB Creation in postgres
 
 With the following final tables:
 
-CitiesList
+Cities
 CityTemp
-CityTempChange
-CityTempStandardDev
-CurrentCityData
+Countries
+CurrentCityWeather
+Element
+EnvArea
+Month
+Regions
+Std_Dev
+TempVar
