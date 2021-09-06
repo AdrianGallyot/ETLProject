@@ -1,10 +1,8 @@
 Overview
 
-Global Temperature and plastic pollution data collection    
+This will develop a Global Temperature analysis database.   
 
 This ETL project will look too arrange the temperate variance data for the last 50 years through to 2020 for all nations, as well as a collection of the average temperature of all major cities since 1995 to understand the effects of global warming.
-
-The main two datasets will consist of Maximum temperature data for all major cities and coutries for the given time frames
 
 Extract:
 
@@ -48,3 +46,5 @@ Month
 Regions
 Std_Dev
 TempVar
+
+These two datasets were selected in understanding the effects of climate change and to establish patterns in temperature.
